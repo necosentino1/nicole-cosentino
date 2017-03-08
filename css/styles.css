@@ -44,7 +44,6 @@ h3 {
 }
 
 .timeline {
-/*  display: flex;*/
   height: 1000px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -75,10 +74,29 @@ h3 {
   background-color: #EEEEEE;
 }
 
-.line p {
+.line-date {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  position: relative;
+}
+
+.line {
   height: 100%;
   width: 3px;
+  align-self: center;
   background-color: #AAAAAA;
+}
+
+.date {
+  position: absolute;
+  left: -14px;
+  top: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #AAAAAA;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .title-description {
