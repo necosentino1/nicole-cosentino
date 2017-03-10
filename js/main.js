@@ -9,9 +9,9 @@ $(function(){
 $('.button-1').click(timelineShow);
 $('.button-2').click(timelineShowReverse);
 
-$('.date.1').click(showInfo);
+$('.date.1').click(showInfo1);
 
-$('.date.2').click(showInfo2017);
+$('.date.2').click(showInfo2);
 // define a function to show info 
 
 function timelineShow () {
@@ -23,11 +23,11 @@ function timelineShowReverse () {
   $('.timeline').toggleClass('timeline-reverse');
 }
 
-function showInfo () {
+function showInfo1 () {
   $('.info.1').toggleClass('show');
 }
 
-function showInfo2017 () {
+function showInfo2 () {
   $('.info.2').toggleClass('show');
 }
 
