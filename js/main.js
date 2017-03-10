@@ -6,17 +6,23 @@ $(function(){
 // listen for a click event on date
 // call show info when event happens 
 
-$('.date.today').click(showInfo);
+$('.button-1').click(timelineShow);
 
-$('.date.2017').click(showInfo2017);
+$('.date.1').click(showInfo);
+
+$('.date.2').click(showInfo2017);
 // define a function to show info 
 
+function timelineShow () {
+  $('.timeline').toggleClass('show');
+}
+
 function showInfo () {
-  $('.info.today').toggleClass('show');
+  $('.info.1').toggleClass('show');
 }
 
 function showInfo2017 () {
-  $('.info.2017').toggleClass('show');
+  $('.info.2').toggleClass('show');
 }
 
 });
