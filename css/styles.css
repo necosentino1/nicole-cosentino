@@ -49,7 +49,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.today {
+.time-stamp {
   display: flex;
   justify-content: space-between;
   height: 500px;
@@ -58,6 +58,7 @@ h3 {
 .company-location-dates {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
   height: 30%;
   width: 35%;
 }
@@ -90,10 +91,13 @@ h3 {
 
 .date {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: -14px;
   top: 10px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   background-color: #AAAAAA;
   margin-left: 20px;
   margin-right: 20px;
@@ -103,6 +107,7 @@ h3 {
 .title-description {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   height: 50%;
   width: 60%;
 }
@@ -119,12 +124,12 @@ h3 {
   background-color: #EEEEEE;
 }
 
-.today-info {
+.info {
   transition: all 0.4s;
   opacity: 0;
 }
 
-.today-info.show {
+.info.show {
   opacity: 1;
 }
 

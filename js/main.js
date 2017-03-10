@@ -6,12 +6,17 @@ $(function(){
 // listen for a click event on date
 // call show info when event happens 
 
-$('.date').click(showInfo);
+$('.date.today').click(showInfo);
 
+$('.date.2017').click(showInfo2017);
 // define a function to show info 
 
 function showInfo () {
-  $('.today-info').toggleClass('show');
+  $('.info.today').toggleClass('show');
+}
+
+function showInfo2017 () {
+  $('.info.2017').toggleClass('show');
 }
 
 });
