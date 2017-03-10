@@ -119,3 +119,12 @@ h3 {
   background-color: #EEEEEE;
 }
 
+.today-info {
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.today-info.show {
+  opacity: 1;
+}
+
