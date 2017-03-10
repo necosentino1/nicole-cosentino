@@ -7,6 +7,7 @@ $(function(){
 // call show info when event happens 
 
 $('.button-1').click(timelineShow);
+$('.button-2').click(timelineShowReverse);
 
 $('.date.1').click(showInfo);
 
@@ -15,6 +16,11 @@ $('.date.2').click(showInfo2017);
 
 function timelineShow () {
   $('.timeline').toggleClass('show');
+  $('.button-2').toggleClass('show');
+}
+
+function timelineShowReverse () {
+  $('.timeline').toggleClass('timeline-reverse');
 }
 
 function showInfo () {

@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-
-
 .container {
   width: 960px;
   margin: 0 auto;
@@ -61,28 +59,36 @@ h3 {
 }
 
 .intro button {
+  transition: all 0.6s;
   height: 70%;
   width: 20%;
   background-color: #EEEEEE;
 }
 
 .button-1 {
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
-
-.timeline {
-  height: 1000px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: all 0.4s;
+.button-2 {
   opacity: 0;
 }
 
-.timeline.show {
-  opacity: 1;
+.timeline {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  transition: all 0.6s;
+  opacity: 0;
 }
 
+.timeline-reverse {
+  flex-direction: column-reverse;
+}
+
+.show {
+  opacity: 1;
+}
 
 .time-stamp {
   display: flex;
@@ -160,7 +166,7 @@ h3 {
 }
 
 .info {
-  transition: all 0.4s;
+  transition: all 0.6s;
   opacity: 0;
 }
 
