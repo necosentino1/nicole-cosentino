@@ -24,23 +24,37 @@
   width: 55%;
 }
 
-h1, h2 {
-  height: 25%;
-  background-color: #EEEEEE;
-  margin-bottom: 10px;
+h1 {
+  height: 30%;
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #f97e76;
+  /*background-color: #EEEEEE;*/
+}
+
+.header h2 {
+  height: 20%;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 24px;
+  /*background-color: #EEEEEE;*/
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   height: 70%;
-  width: 35%;
+  width: 30%;
+  /*background-color: #EEEEEE;*/
 }
 
 h3 {
-  height: 25%;
-  background-color: #EEEEEE;
-  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 5px;
+
 }
 
 .intro {
@@ -48,18 +62,45 @@ h3 {
   flex-direction: row;
   height: 70px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .intro h2 {
   height: 70%;
-  width: 60%;
-  background-color: #EEEEEE;
+  width: 40%;
   margin-right: 20px;
+  font-weight: 200;
+  font-size: 24px;
+  /*background-color: #EEEEEE;*/
 }
 
 .intro button {
   transition: all 0.6s;
+  height: 70%;
+  width: 20%;
+  background-color: #EEEEEE;
+}
+
+.intro-reverse {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.intro-reverse h2 {
+  height: 70%;
+  width: 40%;
+  font-weight: 200;
+  font-size: 24px;
+  margin-right: 20px;
+  /*background-color: #EEEEEE;*/
+}
+
+.intro-reverse button {
   height: 70%;
   width: 20%;
   background-color: #EEEEEE;
@@ -70,11 +111,11 @@ h3 {
 }
 
 .button-2 {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .timeline {
-  height: 1000px;
+  height: 3000px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -127,7 +168,7 @@ h3 {
   height: 100%;
   width: 3px;
   align-self: center;
-  background-color: #AAAAAA;
+  background-color: #f97e76;
 }
 
 .date {
@@ -135,10 +176,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: -14px;
-  top: 10px;
-  width: 40px;
-  height: 40px;
+  left: -19px;
+  top: 30px;
+  width: 45px;
+  height: 45px;
   background-color: #AAAAAA;
   margin-left: 20px;
   margin-right: 20px;
