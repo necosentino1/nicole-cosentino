@@ -89,6 +89,7 @@ button {
 .intro-reverse {
   display: flex;
   flex-direction: row;
+  margin-left: 50px;
   height: 70px;
   width: 100%;
   margin-bottom: 50px;
