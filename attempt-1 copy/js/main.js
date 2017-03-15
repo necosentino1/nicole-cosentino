@@ -3,7 +3,8 @@ $(function(){
 
 // listen for a click event on buttons 
 $('.button-1').click(timelineShow);
-$('.button-2').click(timelineShowReverse);
+$('#radio2').click(timelineShowReverse);
+$('#radio1').click(timelineShow1);
 
 // define a function to toggle timeline show for button 1 
 // define a function to toggle timeline and timeline reverse for button 2
@@ -12,6 +13,9 @@ function timelineShow () {
   $('.intro-reverse').toggleClass('show');
 }
 
+function timelineShow1 () {
+  $('.timeline').removeClass('timeline-reverse');
+}
 
 function timelineShowReverse () {
   $('.timeline').toggleClass('timeline-reverse');
