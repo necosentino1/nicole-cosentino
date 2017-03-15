@@ -35,6 +35,8 @@ $('.date.8').click(showInfo8);
 // define functions to toggle info after click event on date 
 function showInfo1 () {
   $('.info.1').toggleClass('show');
+  $('.date').toggleClass('date-selected');
+  
 }
 
 function showInfo2 () {
