@@ -1,0 +1,270 @@
+* {
+  /*font-family: 'Open Sans', sans-serif;  */
+  font-family: "Helvetica Neue";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 624px;
+  padding: 2%;
+  /*background-color: grey;*/
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  justify-content: flex-end;
+  /*background-color: pink;*/
+}
+
+h1 {
+  font-size: 96px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  /*background-color: grey;*/
+}
+
+.name h2 {
+  margin-bottom: 40px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 32px;
+  /*background-color: grey;*/
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.button-1 {
+  /*transition: all 0.6s;*/
+  height: 10%;
+  width: 25%;
+  background-color: #FFA59F;
+  font-size: 22px;
+}
+
+.button-1:active {
+  background-color: #f97e76;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: flex-end;
+  /*background-color: pink;*/
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 22px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.intro-reverse {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 2%;
+  opacity: 0;
+  transition: all 0.6s;
+  /*background-color: lightblue;*/
+}
+
+
+.intro-reverse h2 {
+  height: 100%;
+  width: 31%;
+  font-weight: 200;
+  font-size: 32px;
+  margin-right: 20px;
+  /*background-color: blue;*/
+}
+
+.radio-buttons {
+  justify-content: 
+  height: 100%;
+  width: 30%;
+  font-size: 22px;
+  /*background-color: lightgreen;*/
+}
+
+input[type=radio] {
+    display:none; 
+}
+
+input[type=radio] + label {
+    display:inline-block;
+    margin:4px;
+    padding: 12px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+}
+
+input[type=radio]:checked + label { 
+  background-image: none;
+  background-color:#FFA59F;
+}
+
+.timeline {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin-bottom: 10px;
+  transition: all 0.6s;
+  opacity: 0;
+  /*background-color: lightgrey;*/
+}
+
+.timeline-reverse {
+  flex-direction: column-reverse;
+}
+
+.show {
+  opacity: 1;
+}
+
+.time-stamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 400px;
+  width: 100%;
+  /*background-color: lightpink;*/
+}
+
+.time-stamp-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  /*background-color: lightgreen;*/
+}
+
+.line-date {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  position: relative;
+  padding-left: 8px;
+}
+
+.line {
+  height: 100%;
+  width: 3px;
+  align-self: center;
+  background-color: #FFA59F;
+}
+
+.date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -5px;
+  top: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #EEEEEE;
+  border: 1px solid #FFA59F;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 12px;
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.6s;
+}
+
+.date-selected {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 7.5px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFA59F;
+  border: 1px solid #FFA59F;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 12px;
+  -webkit-transform: rotate(-45deg);
+}
+
+.date-selected .date-text {
+ display: none;
+}
+
+.date-text {
+  -webkit-transform: rotate(45deg);
+}
+
+.company-location-dates {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 1.5%;
+  /*background-color: purple;*/
+}
+
+.company-location-dates h4 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.company-location-dates p {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 1.5%;
+/*  background-color: orange;*/
+}
+
+.title-description h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.title-description p {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+}
+
+.info {
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.info.show {
+  opacity: 1;
+}
+
+
