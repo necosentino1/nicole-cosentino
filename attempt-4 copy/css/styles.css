@@ -1,6 +1,5 @@
 * {
-  /*font-family: 'Open Sans', sans-serif;  */
-  font-family: "Helvetica Neue";
+  font-family: 'Open Sans', sans-serif;  
   margin: 0;
   padding: 0;
 }
@@ -8,20 +7,20 @@
 .container {
   width: 1280px;
   margin: 0 auto;
-  background-color: #3B3B3B;
+  background-color: black;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 550px;
+  height: 500px;
   padding-left: 2%;
   padding-bottom: 2%;
-  background-image: url("../images/bwy-new-york-2087998_1920.jpg");
+  background-image: url("../images/6-StockSnap_LTEXX1X1IR.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   /*filter: grayscale(100%);*/
 }
 
@@ -32,13 +31,14 @@
   width: 60%;
   justify-content: flex-end;
   margin-left: 1%;
+  /*background-color: grey;*/
 }
 
 h1 {
-  font-size: 86px;
-  letter-spacing: 2px;
-  font-weight: 200;
-  margin-bottom: 20px;
+  font-size: 74px;
+  /*letter-spacing: 2px;*/
+  font-weight: 100;
+  /*margin-bottom: 20px;*/
   color: white;
   /*background:rgba(66,49,53,0.4);*/
   /*background-color: grey;*/
@@ -46,10 +46,10 @@ h1 {
 
 
 .name h2 {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   font-weight: 100;
   letter-spacing: 0.5px;
-  font-size: 32px;
+  font-size: 28px;
   color: white;
   letter-spacing: 0.05em;
   /*background:rgba(66,49,53,0.4);*/
@@ -63,34 +63,34 @@ button {
 
 .button-1 {
     /* transition: all 0.6s; */
-    height: 10%;
-    width: 25%;
+    height: 9%;
+    width: 23%;
     /*background-color: #FFA59F;*/
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 200;
-    border-radius: 8px;
-    background: #F89A02;
-    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    background: #F7DC4B;
+    color: black;
     letter-spacing: 0.02em;
 }
 
 .button-1:active {
-  background-color: #F89A02;
+  background-color: #C27800;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  justify-content: flex-end;
+  width: 23%;
+  justify-content: center;
   /*background-color: pink;*/
 }
 
 h3 {
-  color: white;
+  color: #CDCDCD;
   font-weight: 100;
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 5px;
   letter-spacing: 0.05em;
 }
@@ -114,7 +114,7 @@ h3 {
   letter-spacing: 0.5px;
   font-size: 32px;
   margin-right: 20px;
-  color:white;
+  color: #CDCDCD;
   /*background-color: blue;*/
 }
 
@@ -133,8 +133,9 @@ input[type=radio] + label {
   margin: 4px;
   padding: 12px 12px;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  color: white;
+  border-radius: 6px;
+  color: #CDCDCD;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -142,11 +143,15 @@ input[type=radio] + label {
 
 input[type=radio]:checked + label { 
   background-image: none;
-  background-color: #CB7D00;
+  background-color: #F7DC4B;
+  color: black;
+  font-weight: 600;
 }
 
+
+
 .timeline {
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   padding-left: 2%;
@@ -169,7 +174,7 @@ input[type=radio]:checked + label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 400px;
+  height: 250px;
   width: 100%;
   /*background-color: lightpink;*/
 }
@@ -194,7 +199,7 @@ input[type=radio]:checked + label {
   height: 100%;
   width: 3px;
   align-self: center;
-  background-color: #F89A02;
+  background-color: #F7DC4B;
 }
 
 .date {
@@ -202,12 +207,12 @@ input[type=radio]:checked + label {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: -5px;
+  left: -1.5px;
   top: 20px;
-  width: 45px;
-  height: 45px;
-  background-color: #F89A02;
-  border: 1px solid #F89A02;
+  width: 40px;
+  height: 40px;
+  background-color: #F7DC4B;
+  border: 1px solid #F7DC4B;
   margin-left: 20px;
   margin-right: 10px;
   font-size: 12px;
@@ -224,8 +229,8 @@ input[type=radio]:checked + label {
   top: 20px;
   width: 20px;
   height: 20px;
-  background-color: #F89A02;
-  border: 1px solid #F89A02;
+  background-color: #F7DC4B;
+  border: 1px solid #F7DC4B;
   margin-left: 20px;
   margin-right: 10px;
   font-size: 12px;
@@ -238,7 +243,8 @@ input[type=radio]:checked + label {
 
 .date-text {
   -webkit-transform: rotate(45deg);
-  color: white;
+  color: black;
+  font-weight: 800;
 }
 
 .company-location-dates {
@@ -250,17 +256,21 @@ input[type=radio]:checked + label {
 }
 
 .company-location-dates h4 {
-  font-size: 28px;
-  font-weight: 400;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 22px;
+  color: #CDCDCD;
+  letter-spacing: 0.05em;
   margin-bottom: 10px;
-  color: white;
 }
 
 .company-location-dates p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   margin-bottom: 5px;
-  color: white;
+  /*color: #CDCDCD;*/
+  color: #9B9B9B;
+  letter-spacing: 0.05em;
 }
 
 .title-description {
@@ -272,19 +282,21 @@ input[type=radio]:checked + label {
 }
 
 .title-description h4 {
+  font-weight: 200;
+  letter-spacing: 0.5px;
   font-size: 32px;
-  font-weight: 400;
+  color: #CDCDCD;
+  letter-spacing: 0.05em;
   margin-bottom: 10px;
-  color: white;
 }
 
 .title-description p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   margin-bottom: 5px;
+  color: #9B9B9B;
+  letter-spacing: 0.08em;
   line-height: 1.5;
-  letter-spacing: 0.5;
-  color: white;
 }
 
 .info {
