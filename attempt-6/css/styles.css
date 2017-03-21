@@ -343,7 +343,7 @@ input[type=radio]:checked + label {
   }
 
   .button-1 {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 
   .name {
@@ -377,6 +377,13 @@ input[type=radio]:checked + label {
   .time-stamp-info {
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .line {
+    height: 100%;
+    width: 3px;
+    align-self: center;
+    background-color: #F7DC4B;
   }
 
   .date {
