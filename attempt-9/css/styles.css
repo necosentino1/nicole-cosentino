@@ -233,6 +233,11 @@ input[type=radio]:checked + label {
   transition: all 0.6s;
 }
 
+.date.edu {
+  background-color: #EEC900;
+  border: 1px solid #EEC900;
+}
+
 .date-selected {
   position: absolute;
   display: flex;
@@ -261,9 +266,9 @@ input[type=radio]:checked + label {
 }
 
 .pencil {
-  height: 22px;
-  width: 16px;
-  color: #F7DC4B;
+  height: 32px;
+  width: 26px;
+  margin-right: 10px;
 }
 
 .company-location-dates {
@@ -327,8 +332,8 @@ input[type=radio]:checked + label {
   opacity: 1;
 }
 
-
-/*@media screen and (min-width: 1201px) {
+/*
+@media screen and (min-width: 1201px) {
 
 }*/
 
@@ -443,6 +448,11 @@ input[type=radio]:checked + label {
     font-size: 14px;
   }  
 
+  .pencil {
+    height: 26px;
+    width: 20px;
+    margin-right: 10px;
+}
 }  
 
 
@@ -540,5 +550,11 @@ input[type=radio]:checked + label {
   .company-location-dates p {
     font-size: 14px;
   }  
+
+  .pencil {
+    height: 26px;
+    width: 20px;
+    margin-right: 10px;
+}
 
 }  
